@@ -1,99 +1,115 @@
-body{
-    margin: 0;
-    padding: 0;
-    background: url(pic2.jpg);
-    background-size: cover;
-    background-position: center;
-    font-family: consolas;
+* {
+	box-sizing: border-box;
 }
 
-.password{
-    width: 320px;
-    height: 290px;
-    background: #000;
-    color: #fff;
-    top: 50%;
-    left: 70%;
-    opacity: 0.9;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-    transition: width 2s, height 2s;
-}
-div:hover{
-  width: 370px;
-  height: 300px;
+body {
+	background: #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: consolas;
+	height: 100vh;
+	margin: -20px 0 50px;
 }
 
-.avatar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
+h1 {
+	font-weight: bold;
+	margin: 0;
 }
 
-h1{
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
 }
 
-.password p{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
 }
 
-.password input{
-    width: 100%;
-    margin-bottom: 20px;
+button {
+	border-radius: 20px;
+	border: 1px solid #240a06;
+	background-color: #240a06;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
 }
 
-.password input[type="text"], input[type="password"]
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container {
+	background-color: #000000;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.sign-in-container {
+	left: 10%;
+	width: 100%;
+	font-family: consolas;
+}
+
+.sign-in-container input[type="email"]
 {
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgb(255, 255, 255);
     background: transparent;
     outline: none;
     height: 40px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     font-family: consolas;
-
-}
-.password input[type="submit"]
-{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #fb2525;
-    color: #fff;
-    font-size: 18px;
-    font-family: consolas;
-    border-radius: 20px;
-}
-.password input[type="submit"]:hover
-{
-    cursor: pointer;
-    background: #ffc107;
-    color: #000;
-}
-.password h2{
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 13px;
-
+    caret-color: black;
 }
 
-.password a:hover
-{
-    color: #ffc107;
-}
 body::-webkit-scrollbar{
     display: none;
 }
