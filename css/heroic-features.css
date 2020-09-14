@@ -1,0 +1,17 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/templates/heroic-features)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+body {
+  padding-top: 100px;
+  background-color: black;
+}
+.navbar navbar-expand-lg navbar-dark bg-dark fixed-top
+{
+  background-color: black;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
